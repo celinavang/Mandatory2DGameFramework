@@ -8,6 +8,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using Mandatory2DGameFramework.models.defence;
 
 namespace Mandatory2DGameFramework.Models.Scene
 {
@@ -49,6 +50,10 @@ namespace Mandatory2DGameFramework.Models.Scene
                         else if (obj is MeleeAttackItem || obj is RangedAttackItem)
                         {
                             str += "\u001b[37mA ";
+                        }
+                        else if (obj is DefenceItem)
+                        {
+                            str += "\u001b[37mD ";
                         }
                     }
                     else

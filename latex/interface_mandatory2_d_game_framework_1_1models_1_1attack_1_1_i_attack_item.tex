@@ -1,0 +1,94 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+models.\+attack.\+IAttack\+Item Interface Reference}
+\hypertarget{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item}{}\label{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item}\index{Mandatory2DGameFramework.models.attack.IAttackItem@{Mandatory2DGameFramework.models.attack.IAttackItem}}
+
+
+Interface representing an attack item in the game world.  
+
+
+Inheritance diagram for Mandatory2\+DGame\+Framework.\+models.\+attack.\+IAttack\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.234043cm]{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a19b9547d6dbad028ec055668cda0a3a9}{Damage\+Type}} \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item_a0813cf37c19e7ed21ceab184b73a81fc}{Damage\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the type of damage this attack item deals. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9}{Attack\+Type}} \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item_ad2e102f749af58106c1fac778835e4d9}{Attack\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the attack type of the item (e.\+g., melee or ranged). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item_ab2c0469d7bd65037fefd89edce093be2}{Max\+Damage}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the maximum damage this item can deal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+IWorld\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object_afe0f83c51abbcd9493b9078910dc4111}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the name of the world object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object_a677577d1181858116ccfea3fe07951c4}{PosX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the X-\/coordinate position of the object in the world. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object_a284dedec429074a56c988258e58919b5}{PosY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the Y-\/coordinate position of the object in the world. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object_af810909ec03995ce655042a6a2b88d4a}{Lootable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets whether the object can be looted by creatures. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object_a7d10ae2c3148024f0f66637fa2c8a60e}{Removeable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets whether the object can be removed from the world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+IWorld\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object_a00d143b3dbef6a8d794b0b4a8afbdc11}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the world object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface representing an attack item in the game world. 
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item_ad2e102f749af58106c1fac778835e4d9}\index{Mandatory2DGameFramework.models.attack.IAttackItem@{Mandatory2DGameFramework.models.attack.IAttackItem}!AttackType@{AttackType}}
+\index{AttackType@{AttackType}!Mandatory2DGameFramework.models.attack.IAttackItem@{Mandatory2DGameFramework.models.attack.IAttackItem}}
+\doxysubsubsection{\texorpdfstring{AttackType}{AttackType}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item_ad2e102f749af58106c1fac778835e4d9} 
+\mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9}{Attack\+Type}} Mandatory2\+DGame\+Framework.\+models.\+attack.\+IAttack\+Item.\+Attack\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the attack type of the item (e.\+g., melee or ranged). 
+
+
+
+Implemented in \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_melee_attack_item_aacbe3e5ef13122b7f993a2d80553384d}{Mandatory2\+DGame\+Framework.\+models.\+attack.\+Melee\+Attack\+Item}}, and \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_ranged_attack_item_a4dca252d80c5e8129399bf05a7e323fa}{Mandatory2\+DGame\+Framework.\+models.\+attack.\+Ranged\+Attack\+Item}}.
+
+\Hypertarget{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item_a0813cf37c19e7ed21ceab184b73a81fc}\index{Mandatory2DGameFramework.models.attack.IAttackItem@{Mandatory2DGameFramework.models.attack.IAttackItem}!DamageType@{DamageType}}
+\index{DamageType@{DamageType}!Mandatory2DGameFramework.models.attack.IAttackItem@{Mandatory2DGameFramework.models.attack.IAttackItem}}
+\doxysubsubsection{\texorpdfstring{DamageType}{DamageType}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item_a0813cf37c19e7ed21ceab184b73a81fc} 
+\mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a19b9547d6dbad028ec055668cda0a3a9}{Damage\+Type}} Mandatory2\+DGame\+Framework.\+models.\+attack.\+IAttack\+Item.\+Damage\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the type of damage this attack item deals. 
+
+
+
+Implemented in \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_melee_attack_item_adf938a8e38caba099eb4176d173a36a3}{Mandatory2\+DGame\+Framework.\+models.\+attack.\+Melee\+Attack\+Item}}, and \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_ranged_attack_item_a8ce31fbfc80cb7c32bdfbedfce7d9321}{Mandatory2\+DGame\+Framework.\+models.\+attack.\+Ranged\+Attack\+Item}}.
+
+\Hypertarget{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item_ab2c0469d7bd65037fefd89edce093be2}\index{Mandatory2DGameFramework.models.attack.IAttackItem@{Mandatory2DGameFramework.models.attack.IAttackItem}!MaxDamage@{MaxDamage}}
+\index{MaxDamage@{MaxDamage}!Mandatory2DGameFramework.models.attack.IAttackItem@{Mandatory2DGameFramework.models.attack.IAttackItem}}
+\doxysubsubsection{\texorpdfstring{MaxDamage}{MaxDamage}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item_ab2c0469d7bd65037fefd89edce093be2} 
+int Mandatory2\+DGame\+Framework.\+models.\+attack.\+IAttack\+Item.\+Max\+Damage\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the maximum damage this item can deal. 
+
+
+
+Implemented in \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_melee_attack_item_ac637459fa7a4341cb537a38bffcd05da}{Mandatory2\+DGame\+Framework.\+models.\+attack.\+Melee\+Attack\+Item}}, and \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_ranged_attack_item_aa08cdfd7e43bfd5bc5de065739145c02}{Mandatory2\+DGame\+Framework.\+models.\+attack.\+Ranged\+Attack\+Item}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+Models/\+Attack/IAttack\+Item.\+cs\end{DoxyCompactItemize}

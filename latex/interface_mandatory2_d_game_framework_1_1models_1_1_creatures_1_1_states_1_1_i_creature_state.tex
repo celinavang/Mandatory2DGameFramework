@@ -1,0 +1,52 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+ICreature\+State Interface Reference}
+\hypertarget{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_i_creature_state}{}\label{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_i_creature_state}\index{Mandatory2DGameFramework.models.Creatures.States.ICreatureState@{Mandatory2DGameFramework.models.Creatures.States.ICreatureState}}
+
+
+Interface for the different states a creature can be in. The states are used to determine what action the creature should perform on its turn.  
+
+
+Inheritance diagram for Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+ICreature\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.339713cm]{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_i_creature_state}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_i_creature_state_aacd089077bd5a3d5109d94f34b72d587}{Handle}} (\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}} creature, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}{World}} world, \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object}} obj)
+\begin{DoxyCompactList}\small\item\em Handles the state of the creature. The method will be called when the creature is in the state and it is the creatures turn. The method will return a boolean value, which will determine if the creature has performed an action on its turn. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for the different states a creature can be in. The states are used to determine what action the creature should perform on its turn. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_i_creature_state_aacd089077bd5a3d5109d94f34b72d587}\index{Mandatory2DGameFramework.models.Creatures.States.ICreatureState@{Mandatory2DGameFramework.models.Creatures.States.ICreatureState}!Handle@{Handle}}
+\index{Handle@{Handle}!Mandatory2DGameFramework.models.Creatures.States.ICreatureState@{Mandatory2DGameFramework.models.Creatures.States.ICreatureState}}
+\doxysubsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_i_creature_state_aacd089077bd5a3d5109d94f34b72d587} 
+bool Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+ICreature\+State.\+Handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}}}]{creature}{, }\item[{\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}{World}}}]{world}{, }\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object}}}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Handles the state of the creature. The method will be called when the creature is in the state and it is the creatures turn. The method will return a boolean value, which will determine if the creature has performed an action on its turn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creature} & A reference to the creature that is in the state. This is the creature whose behavior is being handled. \\
+\hline
+{\em world} & The world in which the creature and the object exist. This allows checking for collisions and interactions with the environment. \\
+\hline
+{\em obj} & The object that the creature is interacting with. This can be another creature or an item. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_attack_state_a1bf0a9da17bbf2f75855b6b76fed7998}{Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+Attack\+State}}, and \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_move_state_aee751151a87317250c23f09be452776f}{Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+Move\+State}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+Models/\+Creatures/\+States/ICreature\+State.\+cs\end{DoxyCompactItemize}

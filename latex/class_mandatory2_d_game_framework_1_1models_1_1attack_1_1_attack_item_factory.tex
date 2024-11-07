@@ -1,0 +1,57 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+models.\+attack.\+Attack\+Item\+Factory Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_attack_item_factory}{}\label{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_attack_item_factory}\index{Mandatory2DGameFramework.models.attack.AttackItemFactory@{Mandatory2DGameFramework.models.attack.AttackItemFactory}}
+
+
+Factory class for creating attack items.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item}{IAttack\+Item}} \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_attack_item_factory_a99819407f7710e77f2a356394a72dd40}{Create\+Attack\+Item}} (\mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9}{Attack\+Type}} attack\+Type, string name, int max\+Damage)
+\begin{DoxyCompactList}\small\item\em Creates an attack item of a specified type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factory class for creating attack items. 
+
+Provides a static method for creating instances of {\ttfamily \doxylink{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item}{IAttack\+Item}} based on the specified attack type. Uses the {\ttfamily Attack\+Type} enumeration to determine the type of item to create (melee or ranged). 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_attack_item_factory_a99819407f7710e77f2a356394a72dd40}\index{Mandatory2DGameFramework.models.attack.AttackItemFactory@{Mandatory2DGameFramework.models.attack.AttackItemFactory}!CreateAttackItem@{CreateAttackItem}}
+\index{CreateAttackItem@{CreateAttackItem}!Mandatory2DGameFramework.models.attack.AttackItemFactory@{Mandatory2DGameFramework.models.attack.AttackItemFactory}}
+\doxysubsubsection{\texorpdfstring{CreateAttackItem()}{CreateAttackItem()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_attack_item_factory_a99819407f7710e77f2a356394a72dd40} 
+static \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item}{IAttack\+Item}} Mandatory2\+DGame\+Framework.\+models.\+attack.\+Attack\+Item\+Factory.\+Create\+Attack\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9}{Attack\+Type}}}]{attack\+Type}{, }\item[{string}]{name}{, }\item[{int}]{max\+Damage}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates an attack item of a specified type. 
+
+This method creates and returns a melee or ranged attack item based on the provided {\ttfamily Attack\+Type}. Logs the creation of each item type and throws an exception if an invalid attack type is provided.
+
+
+\begin{DoxyParams}{Parameters}
+{\em attack\+Type} & The type of attack item to create. This can be either {\ttfamily \doxylink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9ae686710e1512ff998541ddd98ee4b7e8}{Attack\+Type.\+melee}} or {\ttfamily \doxylink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9adc18a2eaca63070ab8c88c511ae4e4cd}{Attack\+Type.\+ranged}}. \\
+\hline
+{\em name} & The name of the attack item. \\
+\hline
+{\em max\+Damage} & The maximum damage value for the attack item.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of {\ttfamily \doxylink{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item}{IAttack\+Item}} corresponding to the specified attack type.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & If an invalid attack type is provided.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyNote}{Note}
+This factory method uses tracing to log information about the item creation. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+Models/\+Attack/Attack\+Item\+Factory.\+cs\end{DoxyCompactItemize}

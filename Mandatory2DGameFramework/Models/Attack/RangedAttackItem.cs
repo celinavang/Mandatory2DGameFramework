@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Mandatory2DGameFramework.models.attack
 {
+    /*!
+    * \class RangedAttackItem
+    * \brief Represents a ranged weapon item with dexterity-based damage.
+    */
     public class RangedAttackItem : IAttackItem
     {
+
         public string Name { get; set; }
         public int PosX { get; set; }
         public int PosY { get; set; }
@@ -17,6 +22,11 @@ namespace Mandatory2DGameFramework.models.attack
         public AttackType AttackType { get; set; }
         public int MaxDamage { get; set; }
 
+        /*!
+        * \brief Constructor for a ranged attack item.
+        * \param name Item name.
+        * \param maxDamage Max damage this item can deal.
+        */
         public RangedAttackItem(string name, int maxDamage)
         {
             Name = name;
@@ -26,7 +36,9 @@ namespace Mandatory2DGameFramework.models.attack
             AttackType = AttackType.melee;
             MaxDamage = maxDamage;
         }
-
+        /*!
+ * \brief Returns a string representation of the ranged attack item.
+ */
         public override string ToString()
         {
             return Name;

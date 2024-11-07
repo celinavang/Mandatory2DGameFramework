@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configutation>
+	<creatures>
+		<creature>
+			<name>Orc</name>
+			<health>100</health>
+			<strength>3</strength>
+			<dexterity>0</dexterity>
+			<armorclass>12</armorclass>
+		</creature>
+		<creature>
+			<name>Elf</name>
+			<health>120</health>
+			<strength>0</strength>
+			<dexterity>3</dexterity>
+			<armorclass>11</armorclass>
+		</creature>
+	</creatures>
+	<weapons>
+		<melee>
+			<weapon>
+				<name>stick</name>
+				<damage>4</damage>
+			</weapon>
+		</melee>
+		<ranged>
+			<weapon>
+				<name>Pile of Rocks</name>
+				<damage>4</damage>
+			</weapon>
+		</ranged>
+	</weapons>
+	<defenceItems>
+		<defence>
+			<name>Wooden bucket helmet</name>
+			<armorclass>1</armorclass>
+		</defence>
+		<defence>
+			<name>Trashcan lid</name>
+			<armorclass>2</armorclass>
+		</defence>
+	</defenceItems>
+	<staticItems>
+		<item>
+			<name>
+				Rock
+			</name>
+		</item>
+		<item>
+			<name>
+				Tree
+			</name>
+		</item>
+	</staticItems>
+</configutation>

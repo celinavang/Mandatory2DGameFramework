@@ -1,0 +1,67 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+models.\+attack Namespace Reference}
+\hypertarget{namespace_mandatory2_d_game_framework_1_1models_1_1attack}{}\label{namespace_mandatory2_d_game_framework_1_1models_1_1attack}\index{Mandatory2DGameFramework.models.attack@{Mandatory2DGameFramework.models.attack}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_attack_item_factory}{Attack\+Item\+Factory}}
+\begin{DoxyCompactList}\small\item\em Factory class for creating attack items. \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item}{IAttack\+Item}}
+\begin{DoxyCompactList}\small\item\em Interface representing an attack item in the game world. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_melee_attack_item}{Melee\+Attack\+Item}}
+\begin{DoxyCompactList}\small\item\em Represents a melee attack item (e.\+g., a weapon) in the game world. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1attack_1_1_ranged_attack_item}{Ranged\+Attack\+Item}}
+\begin{DoxyCompactList}\small\item\em Represents a ranged weapon item with dexterity-\/based damage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9}{Attack\+Type}} \{ \mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9ae686710e1512ff998541ddd98ee4b7e8}{melee}}
+, \mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9adc18a2eaca63070ab8c88c511ae4e4cd}{ranged}}
+ \}
+\begin{DoxyCompactList}\small\item\em Specifies the different types of attacks that can be used by creatures or items. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a19b9547d6dbad028ec055668cda0a3a9}{Damage\+Type}} \{ \mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a19b9547d6dbad028ec055668cda0a3a9a5177790ad6df0ea98db41b37b602367c}{strength}}
+, \mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a19b9547d6dbad028ec055668cda0a3a9a3fab1c70aa9068f9d4a7781764b226a1}{dexterity}}
+ \}
+\begin{DoxyCompactList}\small\item\em Specifies the different types of damagetypes that can be used by creatures or items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9}\index{Mandatory2DGameFramework.models.attack@{Mandatory2DGameFramework.models.attack}!AttackType@{AttackType}}
+\index{AttackType@{AttackType}!Mandatory2DGameFramework.models.attack@{Mandatory2DGameFramework.models.attack}}
+\doxysubsubsection{\texorpdfstring{AttackType}{AttackType}}
+{\footnotesize\ttfamily \label{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9} 
+enum \mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9}{Mandatory2\+DGame\+Framework.\+models.\+attack.\+Attack\+Type}}}
+
+
+
+Specifies the different types of attacks that can be used by creatures or items. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{melee@{melee}!Mandatory2DGameFramework.models.attack@{Mandatory2DGameFramework.models.attack}}\index{Mandatory2DGameFramework.models.attack@{Mandatory2DGameFramework.models.attack}!melee@{melee}}}\Hypertarget{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9ae686710e1512ff998541ddd98ee4b7e8}\label{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9} 
+melee&A melee attack type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ranged@{ranged}!Mandatory2DGameFramework.models.attack@{Mandatory2DGameFramework.models.attack}}\index{Mandatory2DGameFramework.models.attack@{Mandatory2DGameFramework.models.attack}!ranged@{ranged}}}\Hypertarget{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9adc18a2eaca63070ab8c88c511ae4e4cd}\label{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a76e4e8be60bf79b9b9ecd591b0b525c9} 
+ranged&A ranged attack type. \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a19b9547d6dbad028ec055668cda0a3a9}\index{Mandatory2DGameFramework.models.attack@{Mandatory2DGameFramework.models.attack}!DamageType@{DamageType}}
+\index{DamageType@{DamageType}!Mandatory2DGameFramework.models.attack@{Mandatory2DGameFramework.models.attack}}
+\doxysubsubsection{\texorpdfstring{DamageType}{DamageType}}
+{\footnotesize\ttfamily \label{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a19b9547d6dbad028ec055668cda0a3a9} 
+enum \mbox{\hyperlink{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a19b9547d6dbad028ec055668cda0a3a9}{Mandatory2\+DGame\+Framework.\+models.\+attack.\+Damage\+Type}}}
+
+
+
+Specifies the different types of damagetypes that can be used by creatures or items. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{strength@{strength}!Mandatory2DGameFramework.models.attack@{Mandatory2DGameFramework.models.attack}}\index{Mandatory2DGameFramework.models.attack@{Mandatory2DGameFramework.models.attack}!strength@{strength}}}\Hypertarget{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a19b9547d6dbad028ec055668cda0a3a9a5177790ad6df0ea98db41b37b602367c}\label{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a19b9547d6dbad028ec055668cda0a3a9} 
+strength&Strength-\/based damage. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{dexterity@{dexterity}!Mandatory2DGameFramework.models.attack@{Mandatory2DGameFramework.models.attack}}\index{Mandatory2DGameFramework.models.attack@{Mandatory2DGameFramework.models.attack}!dexterity@{dexterity}}}\Hypertarget{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a19b9547d6dbad028ec055668cda0a3a9a3fab1c70aa9068f9d4a7781764b226a1}\label{namespace_mandatory2_d_game_framework_1_1models_1_1attack_a19b9547d6dbad028ec055668cda0a3a9} 
+dexterity&Dexterity-\/based damage. \\
+\hline
+
+\end{DoxyEnumFields}

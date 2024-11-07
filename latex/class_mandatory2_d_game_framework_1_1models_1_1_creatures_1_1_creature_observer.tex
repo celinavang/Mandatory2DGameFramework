@@ -1,0 +1,62 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+Creature\+Observer Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_observer}{}\label{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_observer}\index{Mandatory2DGameFramework.models.Creatures.CreatureObserver@{Mandatory2DGameFramework.models.Creatures.CreatureObserver}}
+
+
+Observes a \doxylink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature}{Creature} and handles notifications when certain events occur.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_observer_a9f0607666da74684a8fe47a2cb9773ea}{Creature\+Observer}} (\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}{World}} world)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_observer}{Creature\+Observer} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_observer_ad30b7808c31591cc03a45ee5cf262d50}{Subscribe\+To\+Creature}} (\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature}{Creature}} creature)
+\begin{DoxyCompactList}\small\item\em Subscribes the observer to a creature\textquotesingle{}s death event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Observes a \doxylink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature}{Creature} and handles notifications when certain events occur. 
+
+The \doxylink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_observer}{Creature\+Observer} class allows external objects to subscribe to a creature\textquotesingle{}s events. Currently, it handles the creature\textquotesingle{}s death event, logging a message when the creature dies. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_observer_a9f0607666da74684a8fe47a2cb9773ea}\index{Mandatory2DGameFramework.models.Creatures.CreatureObserver@{Mandatory2DGameFramework.models.Creatures.CreatureObserver}!CreatureObserver@{CreatureObserver}}
+\index{CreatureObserver@{CreatureObserver}!Mandatory2DGameFramework.models.Creatures.CreatureObserver@{Mandatory2DGameFramework.models.Creatures.CreatureObserver}}
+\doxysubsubsection{\texorpdfstring{CreatureObserver()}{CreatureObserver()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_observer_a9f0607666da74684a8fe47a2cb9773ea} 
+Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+Creature\+Observer.\+Creature\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}{World}}}]{world}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_observer}{Creature\+Observer} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & The game world that the observer can interact with. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_observer_ad30b7808c31591cc03a45ee5cf262d50}\index{Mandatory2DGameFramework.models.Creatures.CreatureObserver@{Mandatory2DGameFramework.models.Creatures.CreatureObserver}!SubscribeToCreature@{SubscribeToCreature}}
+\index{SubscribeToCreature@{SubscribeToCreature}!Mandatory2DGameFramework.models.Creatures.CreatureObserver@{Mandatory2DGameFramework.models.Creatures.CreatureObserver}}
+\doxysubsubsection{\texorpdfstring{SubscribeToCreature()}{SubscribeToCreature()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_observer_ad30b7808c31591cc03a45ee5cf262d50} 
+void Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+Creature\+Observer.\+Subscribe\+To\+Creature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature}{Creature}}}]{creature}{}\end{DoxyParamCaption})}
+
+
+
+Subscribes the observer to a creature\textquotesingle{}s death event. 
+
+This method attaches the observer to the specified creature\textquotesingle{}s {\ttfamily Died} event, enabling the observer to receive notifications when the creature dies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em creature} & The \doxylink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature}{Creature} instance to subscribe to. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+Models/\+Creatures/Creature\+Observer.\+cs\end{DoxyCompactItemize}

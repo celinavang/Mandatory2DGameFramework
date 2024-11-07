@@ -1,0 +1,53 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+Attack\+State Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_attack_state}{}\label{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_attack_state}\index{Mandatory2DGameFramework.models.Creatures.States.AttackState@{Mandatory2DGameFramework.models.Creatures.States.AttackState}}
+
+
+Represents the "{}\+Attack"{} state of a creature. The state will be activated when the creature is in range on a opponent and has performed an attack check. The attack is executed when the \textquotesingle{}Handle\textquotesingle{} methods is called.  
+
+
+Inheritance diagram for Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+Attack\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_attack_state}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_attack_state_a1bf0a9da17bbf2f75855b6b76fed7998}{Handle}} (\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}} creature, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}{World}} world, \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object}} obj)
+\begin{DoxyCompactList}\small\item\em Handles the state of the creature. The method will be called when the creature is in the state and it is the creatures turn. The method will return a boolean value, which will determine if the creature has performed an action on its turn. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_i_creature_state}{Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+ICreature\+State}}}
+
+
+\doxysubsection{Detailed Description}
+Represents the "{}\+Attack"{} state of a creature. The state will be activated when the creature is in range on a opponent and has performed an attack check. The attack is executed when the \textquotesingle{}Handle\textquotesingle{} methods is called. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_attack_state_a1bf0a9da17bbf2f75855b6b76fed7998}\index{Mandatory2DGameFramework.models.Creatures.States.AttackState@{Mandatory2DGameFramework.models.Creatures.States.AttackState}!Handle@{Handle}}
+\index{Handle@{Handle}!Mandatory2DGameFramework.models.Creatures.States.AttackState@{Mandatory2DGameFramework.models.Creatures.States.AttackState}}
+\doxysubsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_attack_state_a1bf0a9da17bbf2f75855b6b76fed7998} 
+bool Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+Attack\+State.\+Handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}}}]{creature}{, }\item[{\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}{World}}}]{world}{, }\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object}}}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Handles the state of the creature. The method will be called when the creature is in the state and it is the creatures turn. The method will return a boolean value, which will determine if the creature has performed an action on its turn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creature} & A reference to the creature that is in the state. This is the creature whose behavior is being handled. \\
+\hline
+{\em world} & The world in which the creature and the object exist. This allows checking for collisions and interactions with the environment. \\
+\hline
+{\em obj} & The object that the creature is interacting with. This can be another creature or an item. \\
+\hline
+\end{DoxyParams}
+is called when the creature enters attack state. Will call the \textquotesingle{}Hit\textquotesingle{} method on the creature object. Returns that the \doxylink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature}{Creature} has performed an action on its turn, so that the turn can end.
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_i_creature_state_aacd089077bd5a3d5109d94f34b72d587}{Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+ICreature\+State}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+Models/\+Creatures/\+States/Attack\+State.\+cs\end{DoxyCompactItemize}

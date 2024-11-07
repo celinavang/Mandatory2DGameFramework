@@ -1,0 +1,209 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}{}\label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}\index{Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}}
+
+
+Represents the game world, holding and managing all world objects, creatures, and attack items. It handles object placement, interaction, and distance calculations within the world grid.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a6519b78dbeeb70ac4c06d697d190fb2b}{World}} (int maxX, int maxY)
+\begin{DoxyCompactList}\small\item\em Initializes a new world with specified dimensions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a5ce7f09118bc1c8046f556042a1a2d0e}{Location\+Free}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Checks if a location on the world grid is free (unoccupied). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a66e844be7e180cd4d56f7fb2f948dc3d}{Add\+On\+Location}} (int x, int y, object to\+Add)
+\begin{DoxyCompactList}\small\item\em Adds an object (world object, creature, or attack item) to a specific location on the world grid. \end{DoxyCompactList}\item 
+object? \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a43f573baa1caade8b63b4ccc7866972b}{Get\+Object\+On\+Location}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Retrieves the object located at the specified coordinates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}}? \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a570dcb73f0de9712487b91c334aa9927}{Get\+Closest\+Enemy}} (\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}} creature)
+\begin{DoxyCompactList}\small\item\em Finds the closest enemy creature to the given creature. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object}}? \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a03a410b085c1187710e29da0d388b9fe}{Get\+Closest\+Interactable\+Object}} (\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}} creature, List$<$ \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object}} $>$ interacted\+Objects)
+\begin{DoxyCompactList}\small\item\em Finds the closest interactable object (lootable or attackable) near the specified creature. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a669d82b61bcb212eab8b98f0136f1d92}{Get\+Distance}} (int x1, int y1, int x2, int y2)
+\begin{DoxyCompactList}\small\item\em Calculates the Chebyshev distance between two points (x1, y1) and (x2, y2). \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a658f309ea8e0771ad871064e167356c1}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the world object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_aeeffbe376e5721f2348506ab8cdb02f1}\label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_aeeffbe376e5721f2348506ab8cdb02f1} 
+List$<$ \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object}} $>$ {\bfseries \+\_\+world\+Objects}
+\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a1ac4a1c5297947d3f51bec7317757ba9}\label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a1ac4a1c5297947d3f51bec7317757ba9} 
+List$<$ \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}} $>$ {\bfseries \+\_\+creatures}
+\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a09ce15629df313031d17e69c622fe21b}\label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a09ce15629df313031d17e69c622fe21b} 
+List$<$ \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1attack_1_1_i_attack_item}{IAttack\+Item}} $>$ {\bfseries \+\_\+\+Attack\+Items}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a73019e2e4b03814e11af3b64ff3a7edf}\label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a73019e2e4b03814e11af3b64ff3a7edf} 
+int {\bfseries MaxX}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a193c4c8ad083ef6ce69fc7216a3c09ee}\label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a193c4c8ad083ef6ce69fc7216a3c09ee} 
+int {\bfseries MaxY}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the game world, holding and managing all world objects, creatures, and attack items. It handles object placement, interaction, and distance calculations within the world grid. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a6519b78dbeeb70ac4c06d697d190fb2b}\index{Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}!World@{World}}
+\index{World@{World}!Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{World()}{World()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a6519b78dbeeb70ac4c06d697d190fb2b} 
+Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World.\+World (\begin{DoxyParamCaption}\item[{int}]{maxX}{, }\item[{int}]{maxY}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new world with specified dimensions. 
+
+\textbackslash{}constructor \doxylink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}{World} 
+\begin{DoxyParams}{Parameters}
+{\em maxX} & The maximum X-\/coordinate of the world. \\
+\hline
+{\em maxY} & The maximum Y-\/coordinate of the world. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a66e844be7e180cd4d56f7fb2f948dc3d}\index{Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}!AddOnLocation@{AddOnLocation}}
+\index{AddOnLocation@{AddOnLocation}!Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{AddOnLocation()}{AddOnLocation()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a66e844be7e180cd4d56f7fb2f948dc3d} 
+void Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World.\+Add\+On\+Location (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{object}]{to\+Add}{}\end{DoxyParamCaption})}
+
+
+
+Adds an object (world object, creature, or attack item) to a specific location on the world grid. 
+
+\textbackslash{}method Add\+On\+Location 
+\begin{DoxyParams}{Parameters}
+{\em x} & The X-\/coordinate of the location. \\
+\hline
+{\em y} & The Y-\/coordinate of the location. \\
+\hline
+{\em to\+Add} & The object to be added (must be a valid type). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a570dcb73f0de9712487b91c334aa9927}\index{Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}!GetClosestEnemy@{GetClosestEnemy}}
+\index{GetClosestEnemy@{GetClosestEnemy}!Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{GetClosestEnemy()}{GetClosestEnemy()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a570dcb73f0de9712487b91c334aa9927} 
+\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}}? Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World.\+Get\+Closest\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}}}]{creature}{}\end{DoxyParamCaption})}
+
+
+
+Finds the closest enemy creature to the given creature. 
+
+\textbackslash{}method Get\+Closest\+Enemy 
+\begin{DoxyParams}{Parameters}
+{\em creature} & The creature to find the closest enemy for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest enemy creature or null if no enemies exist. 
+\end{DoxyReturn}
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a03a410b085c1187710e29da0d388b9fe}\index{Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}!GetClosestInteractableObject@{GetClosestInteractableObject}}
+\index{GetClosestInteractableObject@{GetClosestInteractableObject}!Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{GetClosestInteractableObject()}{GetClosestInteractableObject()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a03a410b085c1187710e29da0d388b9fe} 
+\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object}}? Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World.\+Get\+Closest\+Interactable\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}}}]{creature}{, }\item[{List$<$ \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object}} $>$}]{interacted\+Objects}{}\end{DoxyParamCaption})}
+
+
+
+Finds the closest interactable object (lootable or attackable) near the specified creature. 
+
+\textbackslash{}method Get\+Closest\+Interactable\+Object 
+\begin{DoxyParams}{Parameters}
+{\em creature} & The creature for which to find the closest interactable object. \\
+\hline
+{\em interacted\+Objects} & A list of objects that the creature has already interacted with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest interactable object or null if none exist. 
+\end{DoxyReturn}
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a669d82b61bcb212eab8b98f0136f1d92}\index{Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}!GetDistance@{GetDistance}}
+\index{GetDistance@{GetDistance}!Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{GetDistance()}{GetDistance()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a669d82b61bcb212eab8b98f0136f1d92} 
+int Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World.\+Get\+Distance (\begin{DoxyParamCaption}\item[{int}]{x1}{, }\item[{int}]{y1}{, }\item[{int}]{x2}{, }\item[{int}]{y2}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the Chebyshev distance between two points (x1, y1) and (x2, y2). 
+
+\textbackslash{}method Get\+Distance 
+\begin{DoxyParams}{Parameters}
+{\em x1} & The X-\/coordinate of the first point. \\
+\hline
+{\em y1} & The Y-\/coordinate of the first point. \\
+\hline
+{\em x2} & The X-\/coordinate of the second point. \\
+\hline
+{\em y2} & The Y-\/coordinate of the second point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated distance between the two points. 
+\end{DoxyReturn}
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a43f573baa1caade8b63b4ccc7866972b}\index{Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}!GetObjectOnLocation@{GetObjectOnLocation}}
+\index{GetObjectOnLocation@{GetObjectOnLocation}!Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{GetObjectOnLocation()}{GetObjectOnLocation()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a43f573baa1caade8b63b4ccc7866972b} 
+object? Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World.\+Get\+Object\+On\+Location (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the object located at the specified coordinates. 
+
+\textbackslash{}method Get\+Object\+On\+Location 
+\begin{DoxyParams}{Parameters}
+{\em x} & The X-\/coordinate of the location. \\
+\hline
+{\em y} & The Y-\/coordinate of the location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object located at the specified position, or null if no object is found. 
+\end{DoxyReturn}
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a5ce7f09118bc1c8046f556042a1a2d0e}\index{Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}!LocationFree@{LocationFree}}
+\index{LocationFree@{LocationFree}!Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{LocationFree()}{LocationFree()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a5ce7f09118bc1c8046f556042a1a2d0e} 
+bool Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World.\+Location\+Free (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a location on the world grid is free (unoccupied). 
+
+\textbackslash{}method Location\+Free 
+\begin{DoxyParams}{Parameters}
+{\em x} & The X-\/coordinate of the location. \\
+\hline
+{\em y} & The Y-\/coordinate of the location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the location is free, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a658f309ea8e0771ad871064e167356c1}\index{Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}!ToString@{ToString}}
+\index{ToString@{ToString}!Mandatory2DGameFramework.Model.Worlds.World@{Mandatory2DGameFramework.Model.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_a658f309ea8e0771ad871064e167356c1} 
+override string Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a string representation of the world object. 
+
+\textbackslash{}method To\+String 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+Models/\+Worlds/World.\+cs\end{DoxyCompactItemize}

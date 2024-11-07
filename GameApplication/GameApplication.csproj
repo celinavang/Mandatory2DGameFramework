@@ -19,4 +19,10 @@
     <ProjectReference Include="..\Mandatory2DGameFramework\Mandatory2DGameFramework.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="App.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

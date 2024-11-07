@@ -1,0 +1,155 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World\+Object Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object}{}\label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object}\index{Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}}
+
+
+Represents an object in the game world with properties like name, position, and lootability. This class implements the \doxylink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object} interface, providing basic properties and methods for interaction.  
+
+
+Inheritance diagram for Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a90a7576c2cbcf17d137526a5029796b3}{World\+Object}} (string name, bool lootable, bool removable)
+\begin{DoxyCompactList}\small\item\em Initializes a new world object with specified properties. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a7e0294c04e6996a738181dc2d8e60cb2}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the world object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+IWorld\+Object}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a0cbcb40a9cb08f78ce1eb5c10ba8d404}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the name of the world object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a305b0f6f268e2864a57b00abe22a78f5}{Lootable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets whether the object can be looted by creatures. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_aa788f5d8ab3d56713e9396c25c21d714}{Removeable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets whether the object can be removed from the world. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a0ecbe6f898ec4f26e8aac9df1f8f7a11}{PosX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the X-\/coordinate position of the object in the world. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a3cdde0a7cc0c9cbe89ee52191cfc680d}{PosY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the Y-\/coordinate position of the object in the world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+IWorld\+Object}}}
+
+
+\doxysubsection{Detailed Description}
+Represents an object in the game world with properties like name, position, and lootability. This class implements the \doxylink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object} interface, providing basic properties and methods for interaction. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a90a7576c2cbcf17d137526a5029796b3}\index{Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}!WorldObject@{WorldObject}}
+\index{WorldObject@{WorldObject}!Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}}
+\doxysubsubsection{\texorpdfstring{WorldObject()}{WorldObject()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a90a7576c2cbcf17d137526a5029796b3} 
+Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World\+Object.\+World\+Object (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{bool}]{lootable}{, }\item[{bool}]{removable}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new world object with specified properties. 
+
+\textbackslash{}constructor \doxylink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object}{World\+Object} 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the object. \\
+\hline
+{\em lootable} & Whether the object can be looted. \\
+\hline
+{\em removable} & Whether the object can be removed from the world. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a7e0294c04e6996a738181dc2d8e60cb2}\index{Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}!ToString@{ToString}}
+\index{ToString@{ToString}!Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a7e0294c04e6996a738181dc2d8e60cb2} 
+override string Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World\+Object.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a string representation of the world object. 
+
+\textbackslash{}method To\+String 
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object_a00d143b3dbef6a8d794b0b4a8afbdc11}{Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+IWorld\+Object}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a305b0f6f268e2864a57b00abe22a78f5}\index{Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}!Lootable@{Lootable}}
+\index{Lootable@{Lootable}!Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}}
+\doxysubsubsection{\texorpdfstring{Lootable}{Lootable}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a305b0f6f268e2864a57b00abe22a78f5} 
+bool Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World\+Object.\+Lootable\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets whether the object can be looted by creatures. 
+
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object_af810909ec03995ce655042a6a2b88d4a}{Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+IWorld\+Object}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a0cbcb40a9cb08f78ce1eb5c10ba8d404}\index{Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}!Name@{Name}}
+\index{Name@{Name}!Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a0cbcb40a9cb08f78ce1eb5c10ba8d404} 
+string Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World\+Object.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the name of the world object. 
+
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object_afe0f83c51abbcd9493b9078910dc4111}{Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+IWorld\+Object}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a0ecbe6f898ec4f26e8aac9df1f8f7a11}\index{Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}!PosX@{PosX}}
+\index{PosX@{PosX}!Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}}
+\doxysubsubsection{\texorpdfstring{PosX}{PosX}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a0ecbe6f898ec4f26e8aac9df1f8f7a11} 
+int Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World\+Object.\+PosX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the X-\/coordinate position of the object in the world. 
+
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object_a677577d1181858116ccfea3fe07951c4}{Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+IWorld\+Object}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a3cdde0a7cc0c9cbe89ee52191cfc680d}\index{Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}!PosY@{PosY}}
+\index{PosY@{PosY}!Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}}
+\doxysubsubsection{\texorpdfstring{PosY}{PosY}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_a3cdde0a7cc0c9cbe89ee52191cfc680d} 
+int Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World\+Object.\+PosY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the Y-\/coordinate position of the object in the world. 
+
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object_a284dedec429074a56c988258e58919b5}{Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+IWorld\+Object}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_aa788f5d8ab3d56713e9396c25c21d714}\index{Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}!Removeable@{Removeable}}
+\index{Removeable@{Removeable}!Mandatory2DGameFramework.Model.Worlds.WorldObject@{Mandatory2DGameFramework.Model.Worlds.WorldObject}}
+\doxysubsubsection{\texorpdfstring{Removeable}{Removeable}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world_object_aa788f5d8ab3d56713e9396c25c21d714} 
+bool Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+World\+Object.\+Removeable\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets whether the object can be removed from the world. 
+
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object_a7d10ae2c3148024f0f66637fa2c8a60e}{Mandatory2\+DGame\+Framework.\+Model.\+Worlds.\+IWorld\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+Models/\+Worlds/World\+Object.\+cs\end{DoxyCompactItemize}

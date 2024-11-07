@@ -1,0 +1,55 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+Move\+State Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_move_state}{}\label{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_move_state}\index{Mandatory2DGameFramework.models.Creatures.States.MoveState@{Mandatory2DGameFramework.models.Creatures.States.MoveState}}
+
+
+The \doxylink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_move_state}{Move\+State} class handles the behavior of a creature when it is in a state of moving towards an object.  
+
+
+Inheritance diagram for Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+Move\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_move_state}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_move_state_aee751151a87317250c23f09be452776f}{Handle}} (\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}} creature, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}{World}} world, \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object}} obj)
+\begin{DoxyCompactList}\small\item\em Handles the state behavior when the creature is moving towards an object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_i_creature_state}{Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+ICreature\+State}}}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_move_state}{Move\+State} class handles the behavior of a creature when it is in a state of moving towards an object. 
+
+The state is activated when the creature begins its turn. The movement is calculated based on the relative position of the object, and the creature will either move towards the object or transition to another state (e.\+g., attacking) if it can interact with the object. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_move_state_aee751151a87317250c23f09be452776f}\index{Mandatory2DGameFramework.models.Creatures.States.MoveState@{Mandatory2DGameFramework.models.Creatures.States.MoveState}!Handle@{Handle}}
+\index{Handle@{Handle}!Mandatory2DGameFramework.models.Creatures.States.MoveState@{Mandatory2DGameFramework.models.Creatures.States.MoveState}}
+\doxysubsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_move_state_aee751151a87317250c23f09be452776f} 
+bool Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+Move\+State.\+Handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}}}]{creature}{, }\item[{\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}{World}}}]{world}{, }\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object}}}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Handles the state behavior when the creature is moving towards an object. 
+
+This method is called during the creature\textquotesingle{}s turn when it is in the \doxylink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_move_state}{Move\+State}. The creature will either move towards the object, attempt to attack it, or interact with it if it is lootable.
+
+\begin{DoxyReturn}{Returns}
+Returns a boolean value\+:
+\begin{DoxyItemize}
+\item {\ttfamily true} if the creature performed an action (either moved, attacked, or looted).
+\item {\ttfamily false} if no action was performed (the creature could not move or interact with the object). 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_i_creature_state_aacd089077bd5a3d5109d94f34b72d587}{Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+States.\+ICreature\+State}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Mandatory2\+DGame\+Framework/\+Models/\+Creatures/\+States/Move\+State.\+cs\end{DoxyCompactItemize}
