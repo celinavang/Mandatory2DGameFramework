@@ -113,9 +113,9 @@ Inheritance diagram for Mandatory2DGameFramework.models.Creatures.Creature:</div
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af40b5229b58c6774a97e0432c05288d7" id="r_af40b5229b58c6774a97e0432c05288d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af40b5229b58c6774a97e0432c05288d7">Creature</a> (string name, int hitPoint)</td></tr>
-<tr class="memdesc:af40b5229b58c6774a97e0432c05288d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature.html" title="Represents a creature within the game, capable of moving, attacking, looting.">Creature</a> class.  <br /></td></tr>
-<tr class="separator:af40b5229b58c6774a97e0432c05288d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89c005469ae803bcd96e7b4dfc9ae2f" id="r_ad89c005469ae803bcd96e7b4dfc9ae2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad89c005469ae803bcd96e7b4dfc9ae2f">Creature</a> (string name, int hitPoint, int armorClass, int strength, int dexterity)</td></tr>
+<tr class="memdesc:ad89c005469ae803bcd96e7b4dfc9ae2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature.html" title="Represents a creature within the game, capable of moving, attacking, looting.">Creature</a> class.  <br /></td></tr>
+<tr class="separator:ad89c005469ae803bcd96e7b4dfc9ae2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66ed8b09850cc00fb529b95c45b1f7a0" id="r_a66ed8b09850cc00fb529b95c45b1f7a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66ed8b09850cc00fb529b95c45b1f7a0">TakeTurn</a> (<a class="el" href="class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world.html">World</a> world)</td></tr>
 <tr class="memdesc:a66ed8b09850cc00fb529b95c45b1f7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the creature's turn, managing its interactions with the world.  <br /></td></tr>
 <tr class="separator:a66ed8b09850cc00fb529b95c45b1f7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +146,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a867e89deba0e23d500b7c70e1b686493" id="r_a867e89deba0e23d500b7c70e1b686493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a867e89deba0e23d500b7c70e1b686493">TransitionTo</a> (<a class="el" href="interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_i_creature_state.html">ICreatureState</a> state)</td></tr>
 <tr class="memdesc:a867e89deba0e23d500b7c70e1b686493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transitions the creature to a new state.  <br /></td></tr>
 <tr class="separator:a867e89deba0e23d500b7c70e1b686493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13226a0c663e1b13354ccfe63b794c70" id="r_a13226a0c663e1b13354ccfe63b794c70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13226a0c663e1b13354ccfe63b794c70">ExecuteState</a> (<a class="el" href="interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature.html">ICreature</a> creature, <a class="el" href="class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world.html">World</a> world, <a class="el" href="interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object.html">IWorldObject</a> obj)</td></tr>
+<tr class="separator:a13226a0c663e1b13354ccfe63b794c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a986c75f75695f08cbe702822f42d6c" id="r_a2a986c75f75695f08cbe702822f42d6c"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a986c75f75695f08cbe702822f42d6c">ToString</a> ()</td></tr>
 <tr class="memdesc:a2a986c75f75695f08cbe702822f42d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the creature's status.  <br /></td></tr>
 <tr class="separator:a2a986c75f75695f08cbe702822f42d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,8 +224,8 @@ EventHandler&lt; EventArgs &gt;?&#160;</td><td class="memItemRight" valign="bott
 <div class="textblock"><p>Represents a creature within the game, capable of moving, attacking, looting. </p>
 <p>It can interact with other objects and other creatures in the world and transitions between states based on its behavior (e.g., moving or attacking). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af40b5229b58c6774a97e0432c05288d7" name="af40b5229b58c6774a97e0432c05288d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af40b5229b58c6774a97e0432c05288d7">&#9670;&#160;</a></span>Creature()</h2>
+<a id="ad89c005469ae803bcd96e7b4dfc9ae2f" name="ad89c005469ae803bcd96e7b4dfc9ae2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad89c005469ae803bcd96e7b4dfc9ae2f">&#9670;&#160;</a></span>Creature()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,7 +238,22 @@ EventHandler&lt; EventArgs &gt;?&#160;</td><td class="memItemRight" valign="bott
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>hitPoint</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>hitPoint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>armorClass</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>strength</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dexterity</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -246,6 +263,9 @@ EventHandler&lt; EventArgs &gt;?&#160;</td><td class="memItemRight" valign="bott
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the creature. </td></tr>
     <tr><td class="paramname">hitPoint</td><td>The starting and maximum hit points of the creature. </td></tr>
+    <tr><td class="paramname">armorClass</td><td>The armor class of the creature. </td></tr>
+    <tr><td class="paramname">strength</td><td>The strength attribute of the creature. </td></tr>
+    <tr><td class="paramname">dexterity</td><td>The dexterity attribute of the creature. </td></tr>
   </table>
   </dd>
 </dl>
@@ -335,6 +355,34 @@ EventHandler&lt; EventArgs &gt;?&#160;</td><td class="memItemRight" valign="bott
 </div><div class="memdoc">
 
 <p>Drops an item the creature is carrying. </p>
+
+<p>Implements <a class="el" href="interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature.html">Mandatory2DGameFramework.models.Creatures.ICreature</a>.</p>
+
+</div>
+</div>
+<a id="a13226a0c663e1b13354ccfe63b794c70" name="a13226a0c663e1b13354ccfe63b794c70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13226a0c663e1b13354ccfe63b794c70">&#9670;&#160;</a></span>ExecuteState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mandatory2DGameFramework.models.Creatures.Creature.ExecuteState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature.html">ICreature</a></td>          <td class="paramname"><span class="paramname"><em>creature</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world.html">World</a></td>          <td class="paramname"><span class="paramname"><em>world</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object.html">IWorldObject</a></td>          <td class="paramname"><span class="paramname"><em>obj</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature.html">Mandatory2DGameFramework.models.Creatures.ICreature</a>.</p>
 

@@ -14,7 +14,7 @@ Inheritance diagram for Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+Crea
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_af40b5229b58c6774a97e0432c05288d7}{Creature}} (string name, int hit\+Point)
+\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_ad89c005469ae803bcd96e7b4dfc9ae2f}{Creature}} (string name, int hit\+Point, int armor\+Class, int strength, int dexterity)
 \begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature}{Creature} class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_a66ed8b09850cc00fb529b95c45b1f7a0}{Take\+Turn}} (\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}{World}} world)
 \begin{DoxyCompactList}\small\item\em Handles the creature\textquotesingle{}s turn, managing its interactions with the world. \end{DoxyCompactList}\item 
@@ -36,6 +36,8 @@ void \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_
 \begin{DoxyCompactList}\small\item\em Drops an item the creature is carrying. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_a867e89deba0e23d500b7c70e1b686493}{Transition\+To}} (\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_states_1_1_i_creature_state}{ICreature\+State}} state)
 \begin{DoxyCompactList}\small\item\em Transitions the creature to a new state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_a13226a0c663e1b13354ccfe63b794c70}{Execute\+State}} (\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}} creature, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}{World}} world, \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object}} obj)
+\item 
 override string \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_a2a986c75f75695f08cbe702822f42d6c}{To\+String}} ()
 \begin{DoxyCompactList}\small\item\em Returns a string representation of the creature\textquotesingle{}s status. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+ICreature}}}
@@ -97,11 +99,11 @@ Represents a creature within the game, capable of moving, attacking, looting.
 It can interact with other objects and other creatures in the world and transitions between states based on its behavior (e.\+g., moving or attacking). 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_af40b5229b58c6774a97e0432c05288d7}\index{Mandatory2DGameFramework.models.Creatures.Creature@{Mandatory2DGameFramework.models.Creatures.Creature}!Creature@{Creature}}
+\Hypertarget{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_ad89c005469ae803bcd96e7b4dfc9ae2f}\index{Mandatory2DGameFramework.models.Creatures.Creature@{Mandatory2DGameFramework.models.Creatures.Creature}!Creature@{Creature}}
 \index{Creature@{Creature}!Mandatory2DGameFramework.models.Creatures.Creature@{Mandatory2DGameFramework.models.Creatures.Creature}}
 \doxysubsubsection{\texorpdfstring{Creature()}{Creature()}}
-{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_af40b5229b58c6774a97e0432c05288d7} 
-Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+Creature.\+Creature (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{int}]{hit\+Point}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_ad89c005469ae803bcd96e7b4dfc9ae2f} 
+Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+Creature.\+Creature (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{int}]{hit\+Point}{, }\item[{int}]{armor\+Class}{, }\item[{int}]{strength}{, }\item[{int}]{dexterity}{}\end{DoxyParamCaption})}
 
 
 
@@ -112,6 +114,12 @@ Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_
 {\em name} & The name of the creature. \\
 \hline
 {\em hit\+Point} & The starting and maximum hit points of the creature. \\
+\hline
+{\em armor\+Class} & The armor class of the creature. \\
+\hline
+{\em strength} & The strength attribute of the creature. \\
+\hline
+{\em dexterity} & The dexterity attribute of the creature. \\
 \hline
 \end{DoxyParams}
 
@@ -174,6 +182,16 @@ void Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+Creature.\+Drop\+Item (
 
 
 Drops an item the creature is carrying. 
+
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+ICreature}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_a13226a0c663e1b13354ccfe63b794c70}\index{Mandatory2DGameFramework.models.Creatures.Creature@{Mandatory2DGameFramework.models.Creatures.Creature}!ExecuteState@{ExecuteState}}
+\index{ExecuteState@{ExecuteState}!Mandatory2DGameFramework.models.Creatures.Creature@{Mandatory2DGameFramework.models.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{ExecuteState()}{ExecuteState()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_creature_a13226a0c663e1b13354ccfe63b794c70} 
+void Mandatory2\+DGame\+Framework.\+models.\+Creatures.\+Creature.\+Execute\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1models_1_1_creatures_1_1_i_creature}{ICreature}}}]{creature}{, }\item[{\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_world}{World}}}]{world}{, }\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_model_1_1_worlds_1_1_i_world_object}{IWorld\+Object}}}]{obj}{}\end{DoxyParamCaption})}
 
 
 
