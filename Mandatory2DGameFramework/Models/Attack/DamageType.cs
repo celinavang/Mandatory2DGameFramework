@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mandatory2DGameFramework
+namespace Mandatory2DGameFramework.models.attack
 {
-    public class MyLogger
+    public enum DamageType
     {
-
+        strength,
+        dexterity
     }
 }

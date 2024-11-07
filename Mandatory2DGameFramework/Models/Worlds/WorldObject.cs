@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mandatory2DGameFramework.worlds
+namespace Mandatory2DGameFramework.Model.Worlds
 {
-    public class WorldObject
+    public class WorldObject : IWorldObject
     {
         public string Name { get; set; }
         public bool Lootable { get; set; }
@@ -15,11 +15,11 @@ namespace Mandatory2DGameFramework.worlds
         public int PosX { get; set; }
         public int PosY { get; set; }
 
-        public WorldObject()
+        public WorldObject(string name, bool lootable, bool removable)
         {
-            Name = string.Empty;
-            Lootable = false;
-            Removeable = false;
+            Name = name;
+            Lootable = lootable;
+            Removeable = removable;
         }
 
         public override string ToString()
